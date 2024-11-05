@@ -10,6 +10,7 @@
 html,
 body {
   scroll-behavior: smooth;
+  /* position: relative; */
 }
 :root {
   --header-height: 60px;
@@ -31,6 +32,7 @@ header {
   background: url("images/hero-bg.webp");
   background-position: center;
   background-size: cover;
+  position: sticky;
   /* height: 100vh; */
 }
 nav {
@@ -38,6 +40,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 50px 300px;
+  /* position: sticky; */
   & .logo img {
     width: 50%;
     border-radius: 50%;
@@ -146,6 +149,12 @@ nav {
       display: flex;
       align-items: start;
       flex-direction: column;
+      & .google {
+        width: 150px;
+      }
+      & img {
+        width: 150px;
+      }
       gap: 10px;
       & p {
         font-size: 16px;
@@ -169,8 +178,76 @@ nav {
   }
 }
 
-/* ______________________________________________Midea Screen fex______________________________________________ */
 
+.slider {
+  height: 250px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track {
+  animation: scroll 30s alternate-reverse infinite;
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 16);
+}
+
+@keyframes scroll{
+  0% { transform: translateX(0); }
+  100% { transform: translateX( calc( -250px *9) ); }
+}
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.slide img {
+  width: 90%;
+  transition: transform 1s ;
+}
+img:hover {
+  transform: translateZ(40px);
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+  }
+  
+  .slider::before {
+    top: 0;
+    left: 0;
+  }
+  .slider::after {
+    top: 0;
+    right: 0;
+    transform: rotateZ(180deg);
+  }
+  /* ______________________________main Styleing________________________ */
+  main
+  {
+    height: 100vh;
+  }
+  /* ______________________________________________Midea Screen fex______________________________________________ */
+  
 /* mini Screen */
 
 @media screen and (max-width: 765px) {
@@ -303,5 +380,13 @@ nav {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250px * 16);
   }
 }

@@ -15,6 +15,7 @@ body {
   /* position: relative; */
 }
 :root {
+  --font-family-Manrope: "Manrope", sans-serif;
   --header-height: 60px;
   --header-bg-color: #333;
   --header-text-color: #fff;
@@ -47,12 +48,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 300px;
-  /* position: sticky; */
+  padding: 30px 300px;
   & .logo img {
-    width: 50%;
     border-radius: 50%;
-    background: var(--background-color);
   }
   & ul {
     display: flex;
@@ -347,7 +345,7 @@ main {
     color: #fff;
     font-family: "Poppins", sans-serif;
     padding: 50px 0;
-    & .a{
+    & .a {
       text-align: center;
     }
     & a.btn5 {
@@ -416,6 +414,38 @@ main {
           color: var(--background-color);
         }
         gap: 100px;
+        & .img {
+          position: relative;
+        }
+        & a.explore:hover span {
+          opacity: 100%;
+          visibility: visible;
+        }
+        & a,
+        .explore {
+          & span {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            border-radius: 60px;
+            border: 1px solid #b8b8b8;
+            background: rgba(39, 39, 39, 0.5);
+            backdrop-filter: blur(5px);
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            visibility: hidden;
+          }
+        }
         & .img img {
           width: 90%;
           border-radius: 50px;

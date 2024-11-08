@@ -298,6 +298,37 @@ main {
       }
     }
   }
+  & .Who-we-are {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding: 50px 300px;
+    & .text {
+      & h3 {
+        font-size: 20px;
+        font-family: "Manrope", sans-serif;
+        color: var(--background-color);
+        margin-bottom: 20px;
+      }
+      & h1 {
+        font-size: 50px;
+        font-family: "Poppins", sans-serif;
+        line-height: 60px;
+        margin-bottom: 20px;
+      }
+      & p {
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        color: var(--header-bg-color);
+        line-height: 30px;
+      }
+    }
+    & .img img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 /* _____________________________________main___________________________________________ */
@@ -367,7 +398,7 @@ main {
   }
   .video video {
     margin-left: 40px;
-    /* margin-top: 180%; */
+    margin-top: -180%;
     width: 80%;
   }
   main {
@@ -375,6 +406,25 @@ main {
       flex-direction: column;
       padding: 20px;
       margin-top: 320%;
+    }
+    & .Who-we-are {
+      padding: 20px;
+      flex-direction: column;
+      margin-top: 50px;
+      gap: 20px;
+      & .text {
+        & h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        & h1 {
+          font-size: 45px;
+          margin-bottom: 10px;
+        }
+      }
+      & .img img {
+        width: 100%;
+      }
     }
   }
 }
@@ -423,6 +473,11 @@ main {
       margin-top: 170%;
       padding: 20px;
       flex-direction: column;
+    }
+    & .Who-we-are {
+      flex-direction: column;
+      padding: 50px;
+      gap: 20px;
     }
   }
 }
@@ -490,6 +545,42 @@ main {
     }
   }
 }
+/* end */
+@media screen and (min-width: 1020px) and (max-width: 1030px) {
+  main {
+    .cards {
+      margin-top: 190%;
+    }
+    .Who-we-are {
+      padding: 50px;
+      flex-direction: column;
+      margin: 50px;
+      gap: 20px;
+    }
+  }
+}
+@media screen and (min-width: 1031px) and (max-width: 1280px) {
+  .slider {
+    margin-top: 200px;
+  }
+  main {
+    .cards {
+      margin-top: 100%;
+    }
+    & .Who-we-are {
+      padding: 50px;
+      flex-direction: column;
+      margin: 50px;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      & .img img{
+        width: 50%;
+        
+      }
+    }
+  }
+}
 
 /* More */
 @media screen and (max-width: 550px) {
@@ -534,7 +625,7 @@ main {
   }
   .hero {
     & .runing img {
-      margin-top: 250px;
+      margin-top: 300px;
       margin-right: 50px;
     }
   }
@@ -542,7 +633,7 @@ main {
     margin-top: 550px;
   }
   .video video {
-    margin-top: 400px;
+    margin-top: 200px;
   }
 }
 

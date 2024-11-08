@@ -33,9 +33,15 @@ a {
 /* Styling___________________ */
 header {
   background: url("images/hero-bg.webp");
-  background-position: center;
+  background-position: center, center;
   background-size: cover;
   height: 100vh;
+}
+.nav-gation {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10000000;
 }
 nav {
   display: flex;
@@ -58,6 +64,7 @@ nav {
       color: #333;
       &:hover {
         color: #000fff;
+        text-shadow: 5px 5px 40px #000fff;
       }
     }
   }
@@ -130,10 +137,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 500px; */
-    padding-right: 770px;
-    padding-left: 200px;
-    /* padding-right: 220px; */
+    padding: 20px 150px;
+    & .runing {
+      position: relative;
+      & img {
+        top: -50px;
+        position: absolute;
+        animation: Ai_rotate 5s infinite;
+      }
+    }
     & h3 {
       font-size: 25px;
       font-family: "Poppins", sans-serif;
@@ -169,7 +181,7 @@ nav {
     }
   }
 }
-.runing {
+/* .runing {
   img {
     max-width: 100%;
     animation: Ai_rotate 5s infinite;
@@ -178,7 +190,7 @@ nav {
     right: 90px;
     top: 630px;
   }
-}
+} */
 
 .slider {
   height: 250px;
@@ -334,6 +346,16 @@ main {
     background: var(--bacground-color2);
     color: #fff;
     font-family: "Poppins", sans-serif;
+    padding: 50px 0;
+    & .a{
+      text-align: center;
+    }
+    & a.btn5 {
+      padding: 15px 20px;
+      background: var(--background-color);
+      border-radius: 20px;
+      color: #fff;
+    }
     & .cardses {
       display: flex;
       flex-direction: column;
@@ -449,12 +471,12 @@ main {
       padding: 0 20px;
       gap: 50px;
     }
-    & .runing {
+    /* & .runing {
       & img {
         margin-top: 290px;
         margin-right: 50px;
       }
-    }
+    } */
   }
   .slider {
     margin-top: 100px;
@@ -619,6 +641,10 @@ main {
         display: noen;
       }
     }
+    .download {
+      flex-direction: column;
+      gap: 50px;
+    }
     .hero-para {
       padding: 0 50px;
     }
@@ -629,11 +655,11 @@ main {
         width: 50%;
       }
     }
-    & .runing img {
-      /* width: 70%; */
+    /* & .runing img {
+      width: 70%;
       margin-top: -50px;
       margin-right: 350px;
-    }
+    } */
   }
   & .slider {
     /* height: 150px; */
@@ -645,8 +671,10 @@ main {
   }
   & .video video {
     margin-left: 140px;
-    margin-top: 0;
+    margin-top: 190px;
+
     width: 70%;
+    /* position: fixed; */
   }
   /* main */
   main {
@@ -716,19 +744,19 @@ main {
 
 /* More */
 @media screen and (max-width: 550px) {
-  .hero {
+  /* .hero {
     & .runing img {
       margin-top: 120px;
       margin-right: 120px;
     }
-  }
+  } */
 }
 @media screen and (max-width: 450px) {
   .hero {
     height: 50vh;
-    & .runing img {
+    /* & .runing img {
       margin-top: 250px;
-    }
+    } */
   }
   & .slider {
     margin-top: 50px;
@@ -739,7 +767,6 @@ main {
   .video video {
     margin-top: 50px;
   }
-  
 }
 @media screen and (max-width: 480px) {
   .hero {
@@ -755,37 +782,58 @@ main {
 @media screen and (max-width: 395px) {
   .hero {
     height: 135vh;
-    
   }
-  .hero {
+  /* .hero {
     & .runing img {
       margin-top: 300px;
       margin-right: 50px;
     }
-  }
+  } */
   .bg {
     margin-top: 550px;
   }
   .video video {
     margin-top: 200px;
   }
-  
 }
 
 /* amination */
-@keyframes Ai_rotate {
+/* @keyframes Ai_rotate {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
-}
-@keyframes slider {
+} */
+/* @keyframes slider {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-250px * 16);
+  }
+} */
+@-webkit-keyframes Ai_rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes Ai_rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

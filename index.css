@@ -19,6 +19,7 @@ body {
   --header-bg-color: #333;
   --header-text-color: #fff;
   --background-color: #000fff;
+  --bacground-color2: #030307;
 }
 section {
   scroll-margin: 50px;
@@ -329,6 +330,77 @@ main {
       height: auto;
     }
   }
+  .work {
+    background: var(--bacground-color2);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    & .cardses {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      padding: 150px;
+      & .card-text {
+        display: flex;
+        align-items: center;
+        /* padding: 0 350px; */
+        /* margin-right: 50px; */
+        gap: 360px;
+        & p {
+          /* padding: 0 50px; */
+          color: gray;
+        }
+        & h3 {
+          color: gold;
+          font-weight: bold;
+        }
+        & h1 {
+          font-size: 40px;
+        }
+      }
+      & .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .btn {
+          background: rgba(119, 85, 255, 0.12);
+          color: #fff;
+          padding: 10px 15px;
+          border-radius: 20px;
+        }
+        & h2 {
+          font-size: 36px;
+          color: #fff;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          & a {
+            color: #fff;
+            transition: 1s ease;
+            &:hover {
+              color: var(--background-color);
+            }
+          }
+        }
+        & p {
+          color: #fff;
+          & a {
+            color: gray;
+          }
+          margin-bottom: 20px;
+        }
+        & .a {
+          text-decoration: underline;
+          color: var(--background-color);
+        }
+        gap: 100px;
+        & .img img {
+          width: 90%;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
 }
 
 /* _____________________________________main___________________________________________ */
@@ -400,12 +472,13 @@ main {
     margin-left: 40px;
     margin-top: -180%;
     width: 80%;
+    display: none;
   }
   main {
     .cards {
       flex-direction: column;
       padding: 20px;
-      margin-top: 320%;
+      margin-top: 200%;
     }
     & .Who-we-are {
       padding: 20px;
@@ -424,6 +497,24 @@ main {
       }
       & .img img {
         width: 100%;
+      }
+    }
+    & .work {
+      & .cardses {
+        gap: 150px;
+        padding: 20px;
+        & .card-text {
+          flex-direction: column;
+          margin: 0;
+          padding: 20px;
+          gap: 50px;
+        }
+        .card {
+          flex-direction: column;
+          & h2 {
+            font-size: 30px;
+          }
+        }
       }
     }
   }
@@ -478,6 +569,27 @@ main {
       flex-direction: column;
       padding: 50px;
       gap: 20px;
+    }
+    & .work {
+      & .cardses {
+        gap: 150px;
+        padding: 50px;
+        & .card-text {
+          flex-direction: column;
+          margin: 0;
+          padding: 20px;
+          gap: 50px;
+        }
+        .card {
+          flex-direction: column;
+          /* & h2 {
+            font-size: 30px;
+          } */
+          & .img img {
+            width: 90%;
+          }
+        }
+      }
     }
   }
 }
@@ -543,6 +655,27 @@ main {
       padding: 20px;
       flex-direction: column;
     }
+    & .work {
+      & .cardses {
+        gap: 150px;
+        padding: 50px;
+        & .card-text {
+          flex-direction: column;
+          margin: 0;
+          padding: 20px;
+          gap: 50px;
+        }
+        .card {
+          flex-direction: column;
+          /* & h2 {
+            font-size: 30px;
+          } */
+          & .img img {
+            width: 90%;
+          }
+        }
+      }
+    }
   }
 }
 /* end */
@@ -574,9 +707,8 @@ main {
       align-items: center;
       gap: 20px;
       text-align: center;
-      & .img img{
+      & .img img {
         width: 50%;
-        
       }
     }
   }
@@ -607,6 +739,7 @@ main {
   .video video {
     margin-top: 50px;
   }
+  
 }
 @media screen and (max-width: 480px) {
   .hero {
@@ -622,6 +755,7 @@ main {
 @media screen and (max-width: 395px) {
   .hero {
     height: 135vh;
+    
   }
   .hero {
     & .runing img {
@@ -635,6 +769,7 @@ main {
   .video video {
     margin-top: 200px;
   }
+  
 }
 
 /* amination */

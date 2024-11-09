@@ -4,6 +4,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Yeseva+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +22,7 @@
   --bacground-color3: #030307f5;
   --font-family-Poppins: "Poppins", sans-serif;
   --font-family-Roboto: "Roboto", sans-serif;
+  --font-family-Concert-One-Static: "Roboto", sans-serif;
 }
 
 /* ________________________________Why Choose Us_______________________________ */
@@ -85,7 +88,7 @@
           margin-top: 20px;
           font-family: var(--font-family-Manrope);
         }
-        & p{
+        & p {
           margin-bottom: 20px;
         }
       }
@@ -154,7 +157,79 @@
   width: calc(250px * 16);
   animation: scroll 40s linear infinite;
 }
+
 /* ________________________________Why Choose Us_______________________________ */
+/* ________________________________________sticky_________________________________________ */
+.sticky {
+  display: flex;
+  align-items: start;
+  color: #fff;
+  padding: 50px 250px;
+  gap: 90px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(images/serviece-transparent-bg.png.bv.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .text {
+    position: sticky;
+    margin-top: 20px;
+    padding: 100px;
+    top: 0;
+    & h3 {
+      font-size: 25px;
+      font-family: var(--font-family-Poppins);
+      color: gold;
+      margin-bottom: 20px;
+    }
+    & h1 {
+      font-size: 60px;
+      font-family: var(--font-family-Concert-One-Static);
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+    }
+    & p {
+      font-size: 18px;
+      font-family: var(--font-family-Roboto);
+      color: gray;
+    }
+  }
+  & .flex {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    & .card {
+      background: #1c1c20;
+      padding: 50px 60px;
+      border-radius: 50px;
+      display: flex;
+      gap: 20px;
+      align-items: start;
+      & .h3 h3 {
+        font-family: var(--font-family-Manrope);
+        background: rgb(119, 85, 255);
+        padding: 15px 12px;
+        border-radius: 50%;
+        font-size: 25px;
+        transform: rotate(25deg);
+        & p {
+          transform: rotate(-25deg);
+        }
+      }
+      & h1 {
+        font-size: 30px;
+        font-family: var(--font-family-Poppins);
+        margin-bottom: 20px;
+      }
+      & p {
+        font-size: 18px;
+        font-family: var(--font-family-Poppins);
+      }
+    }
+  }
+}
+/* ________________________________________sticky_________________________________________ */
 /* resposive______________ */
 @media screen and (max-width: 767px) {
   .choose-us {
@@ -192,7 +267,27 @@
       }
     }
   }
+  .sticky {
+    flex-direction: column;
+    padding: 20px;
+    background-size: cover;
+    & .text {
+      text-align: center;
+      position: static;
+      padding: 20px;
+      & h1 {
+        font-size: 45px;
+      }
+    }
+    & .flex {
+      .card {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
 }
+
 @media screen and (min-width: 768px) and (max-width: 988px) {
   .choose-us {
     & .p {
@@ -209,6 +304,13 @@
       & .card2 {
         margin: 0 0;
       }
+    }
+  }
+  .sticky {
+    flex-direction: column;
+    padding: 50px;
+    & .text {
+      position: static;
     }
   }
 }
@@ -228,6 +330,16 @@
       }
       & .card2 {
         margin: 0 0;
+      }
+    }
+  }
+  .sticky {
+    padding: 50px;
+    & .text {
+      padding: 20px;
+      padding-top: 100px;
+      & h1{
+        font-size: 50px;
       }
     }
   }

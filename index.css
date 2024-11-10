@@ -12,7 +12,6 @@
 html,
 body {
   scroll-behavior: smooth;
-  /* position: relative; */
 }
 :root {
   --font-family-Manrope: "Manrope", sans-serif;
@@ -262,14 +261,18 @@ img:hover {
 /* video */
 .bg {
   width: 100%;
-  height: 90vh;
+  height: 50vh;
   background: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0.1));
+}
+.video {
+  position: relative;
+  margin-bottom: 120px;
 }
 .video video {
   position: absolute;
-  top: 180%;
-  width: 50%;
-  margin-left: 500px;
+  top: 15%;
+  width: 70%;
+  margin-left: 300px;
   border-radius: 50px;
   border: 10px solid #e4ddff;
 }
@@ -279,7 +282,7 @@ img:hover {
 
 main {
   & .cards {
-    margin-top: 70%;
+    margin-top: 60%;
     padding: 50px 200px;
     display: flex;
     align-items: center;
@@ -509,10 +512,11 @@ main {
     } */
   }
   .slider {
-    margin-top: 100px;
     /* height: 150px; */
     margin: auto;
     /* margin-top: 50px; */
+
+    margin-top: 300px;
   }
   .slide img {
     width: 100%;
@@ -520,11 +524,12 @@ main {
   .bg {
     display: none;
   }
+  .video {
+    margin-top: 00%;
+  }
   .video video {
     margin-left: 40px;
-    margin-top: -180%;
     width: 80%;
-    display: none;
   }
   main {
     .cards {
@@ -605,15 +610,17 @@ main {
   & .bg {
     display: none;
   }
+  .video {
+    margin-top: 150px;
+  }
   .video video {
-    margin-left: 100px;
-    margin-top: -20px;
-    width: 80%;
+    margin-left: 45px;
+    width: 90%;
   }
   /* main */
   main {
     & .cards {
-      margin-top: 170%;
+      margin-top: 80%;
       padding: 20px;
       flex-direction: column;
     }
@@ -702,21 +709,24 @@ main {
   & .video video {
     margin-left: 140px;
     margin-top: 190px;
-
     width: 70%;
     /* position: fixed; */
   }
   /* main */
   main {
     & .cards {
-      margin-top: -90px;
-      padding: 20px;
+      margin-top: 0;
       flex-direction: column;
     }
     & .work {
+      & h1,
+      h3,
+      .p {
+        text-align: center;
+      }
       & .cardses {
         gap: 150px;
-        padding: 50px;
+        padding: 0 50px;
         & .card-text {
           flex-direction: column;
           margin: 0;
@@ -724,7 +734,6 @@ main {
           gap: 50px;
         }
         .card {
-          flex-direction: column;
           /* & h2 {
             font-size: 30px;
           } */
@@ -735,12 +744,21 @@ main {
       }
     }
   }
+  .video{
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+  .video video {
+    width: 90%;
+    margin-left: 50px;
+  }
 }
 /* end */
 @media screen and (min-width: 1020px) and (max-width: 1030px) {
   main {
     .cards {
-      margin-top: 190%;
+      margin-top: 60%;
     }
     .Who-we-are {
       padding: 50px;
@@ -753,10 +771,11 @@ main {
 @media screen and (min-width: 1031px) and (max-width: 1280px) {
   .slider {
     margin-top: 200px;
+    margin-bottom: 50%;
   }
   main {
     .cards {
-      margin-top: 100%;
+      margin-top: 150%;
     }
     & .Who-we-are {
       padding: 50px;
@@ -770,23 +789,26 @@ main {
       }
     }
   }
+   .video{
+    margin-top: -22px;
+   }
 }
 
 /* More */
-@media screen and (max-width: 550px) {
-  /* .hero {
+/* @media screen and (max-width: 550px) {
+  .hero {
     & .runing img {
       margin-top: 120px;
       margin-right: 120px;
     }
-  } */
+  }
 }
 @media screen and (max-width: 450px) {
   .hero {
     height: 50vh;
-    /* & .runing img {
+    & .runing img {
       margin-top: 250px;
-    } */
+    }
   }
   & .slider {
     margin-top: 50px;
@@ -802,30 +824,30 @@ main {
   .hero {
     height: 100vh;
   }
-  /* .hero{
+  .hero{
     & .runing img{
       margin-top: 190px;
       margin-right: 120px;
     }
-  } */
+  }
 }
 @media screen and (max-width: 395px) {
   .hero {
     height: 135vh;
   }
-  /* .hero {
+  .hero {
     & .runing img {
       margin-top: 300px;
       margin-right: 50px;
     }
-  } */
+  }
   .bg {
     margin-top: 550px;
   }
   .video video {
     margin-top: 200px;
   }
-}
+} */
 
 /* amination */
 /* @keyframes Ai_rotate {

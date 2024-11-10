@@ -230,6 +230,126 @@
   }
 }
 /* ________________________________________sticky_________________________________________ */
+/* __________________________________________pricing_________________________________________ */
+
+.pricing {
+  padding: 100px 350px;
+  & .small-heading {
+    color: var(--background-color);
+    font-size: 20px;
+    font-family: var(--font-family-Poppins);
+  }
+  & .big-heading {
+    font-size: 50px;
+    font-family: var(--font-family-Roboto);
+  }
+  .price-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+    .flex-a {
+      display: flex;
+      background: var(--background-color);
+      color: #fff;
+      justify-content: center;
+      margin-top: 10px;
+      padding: 15px 0;
+      text-align: center;
+      border-radius: 20px;
+      font-family: var(--font-family-Roboto);
+      font-size: 18px;
+      font-weight: 500;
+    }
+    & .card {
+      background: #f2f2f3;
+      height: 100%;
+      padding: 50px 30px;
+      border-radius: 30px;
+      & h2 {
+        font-size: 25px;
+        font-family: var(--font-family-Concert-One-Static);
+        margin-bottom: 20px;
+      }
+      & h3 {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: var(--font-family-Roboto);
+        margin-bottom: 20px;
+      }
+      & .p {
+        font-family: var(--font-family-Manrope);
+        & span {
+          font-size: 50px;
+          font-weight: 500;
+          font-family: var(--font-family-Poppins);
+          color: #000fff;
+        }
+      }
+      & hr {
+        border: 1px solid;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-image: linear-gradient(to right, #fff, #696969, #fff);
+        border-image-slice: 1;
+      }
+      & h4 {
+        font-size: 20px;
+        font-family: var(--font-family-Poppins);
+        font-weight: 500;
+        margin-top: 10px;
+      }
+      & .reson {
+        margin-top: 20px;
+        & .copy {
+          display: flex;
+          align-items: start;
+          gap: 10px;
+          & i {
+            color: #000fff;
+            font-size: 20px;
+          }
+          & p {
+            font-family: var(--font-family-Roboto);
+            font-size: 20px;
+          }
+        }
+        & p {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        & p i {
+          margin-right: 5px;
+          color: #000fff;
+        }
+      }
+    }
+    & .color2 {
+      background: var(--background-color);
+      color: #e4e4e4;
+      & .flex-a {
+        background: #fff;
+        color: #1c1c20;
+      }
+      & .p {
+        & span {
+          color: #fff;
+        }
+      }
+      & .reson {
+        & .copy {
+          & i {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* __________________________________________pricing_________________________________________ */
+
 /* resposive______________ */
 @media screen and (max-width: 767px) {
   .choose-us {
@@ -286,6 +406,23 @@
       }
     }
   }
+  .pricing {
+    padding: 20px;
+    .small-heading {
+      font-size: 18px;
+    }
+    & .small-heading {
+      font-size: 20px;
+      text-align: center;
+    }
+    & .big-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    .price-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 988px) {
@@ -313,6 +450,12 @@
       position: static;
     }
   }
+  .pricing {
+    padding: 20px;
+    & .price-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 @media screen and (min-width: 989px) and (max-width: 1300px) {
   .choose-us {
@@ -320,7 +463,6 @@
       padding: 0 50px;
     }
     & .cardses {
-      grid-template-columns: repeat(1, 1fr);
       padding: 0 50px;
       margin: 0;
       margin: 50px;
@@ -338,9 +480,15 @@
     & .text {
       padding: 20px;
       padding-top: 100px;
-      & h1{
+      & h1 {
         font-size: 50px;
       }
+    }
+  }
+  .pricing {
+    padding: 20px;
+    & .price-cards {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

@@ -193,6 +193,22 @@
       }
     }
   }
+  footer {
+    padding: 20px;
+  }
+  .main-footer {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+  }
+  .side-footer {
+    flex-direction: column;
+    gap: 50px;
+    & .social-midea {
+      gap: 10px;
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
 }
 /* end */
 
@@ -319,6 +335,17 @@
       }
     }
   }
+  footer {
+    padding: 100px;
+  }
+  .main-footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 50px;
+  }
+  .side-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /* end */
@@ -433,6 +460,17 @@
     & .div2 {
       width: 100%;
     }
+  }
+  footer {
+    padding: 100px;
+  }
+  .main-footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 50px;
+  }
+  .side-footer {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 /* end */

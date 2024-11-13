@@ -255,12 +255,16 @@
       color: #fff;
       justify-content: center;
       margin-top: 10px;
-      padding: 15px 0;
+      padding: 20px 0;
       text-align: center;
-      border-radius: 20px;
+      border-radius: 30px;
       font-family: var(--font-family-Roboto);
       font-size: 18px;
       font-weight: 500;
+      transition: 0.5s ease;
+      &:hover {
+        background: #000;
+      }
     }
     & .card {
       background: #f2f2f3;
@@ -331,6 +335,10 @@
       & .flex-a {
         background: #fff;
         color: #1c1c20;
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
       }
       & .p {
         & span {
@@ -350,145 +358,190 @@
 
 /* __________________________________________pricing_________________________________________ */
 
-/* resposive______________ */
-@media screen and (max-width: 767px) {
-  .choose-us {
-    margin: 0;
-    padding: 50px 0;
-    & .p {
-      padding: 0px;
-      font-size: 16px;
-    }
-    .cardses {
-      padding: 20px;
-      margin: 0;
-      margin-top: 50px;
-      & .main-card-1 {
-        flex-direction: column;
-      }
-      & .card1 {
-        padding: 30px 20px;
-        & h1 {
-          font-size: 30px;
-        }
-        & .img {
-          flex-direction: column;
-          & img {
-            width: 100%;
-          }
-        }
-      }
-      & .card2 {
-        padding: 30px 20px;
-        & h1 {
-          font-size: 30px;
-        }
-        margin: 0 0;
-      }
-    }
+/* _________________________________________recent-blog_______________________________________ */
+
+.recent-blog {
+  padding: 100px 50px;
+  background: url(images/bolg.png.bv.webp) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  & a {
+    color: #fff;
   }
-  .sticky {
-    flex-direction: column;
-    padding: 20px;
-    background-size: cover;
-    & .text {
-      text-align: center;
-      position: static;
-      padding: 20px;
-      & h1 {
-        font-size: 45px;
-      }
-    }
-    & .flex {
-      .card {
-        flex-direction: column;
-        gap: 30px;
-      }
-    }
+  & img {
+    border-radius: 50px;
   }
-  .pricing {
-    padding: 20px;
-    .small-heading {
-      font-size: 18px;
-    }
-    & .small-heading {
+  & h3,
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--font-family-Roboto);
+  }
+  & h3 {
+    color: gold;
+  }
+  & h1 {
+    margin-bottom: 100px;
+    font-family: var(--font-family-Manrope);
+    font-size: 50px;
+  }
+  .see-blog {
+    text-align: center;
+    margin-top: 50px;
+    & a.see {
+      background: var(--background-color);
+      color: #fff;
+      padding: 15px 35px;
+      font-family: var(--font-family-Poppins);
+      border-radius: 30px;
+      transition: 0.5s ease;
+      font-weight: 600;
       font-size: 20px;
-      text-align: center;
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
     }
-    & .big-heading {
-      font-size: 30px;
-      text-align: center;
+  }
+  & .blog-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 250px;
+    & .img img {
+      margin-bottom: 20px;
     }
-    .price-cards {
-      grid-template-columns: repeat(1, 1fr);
+    & .tag {
+      padding: 5px 10px;
+      background: #ffffff1f;
+      color: #e6e6e6;
+      border-radius: 20px;
+      font-family: var(--font-family-Manrope);
+      margin-left: 5px;
+      transition: 0.5s ease;
+      &:hover {
+        background: var(--background-color);
+      }
+    }
+    & h2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: var(--font-family-Poppins);
+      & a {
+        color: #fff;
+        transition: 0.5s ease;
+        &:hover {
+          color: var(--background-color);
+        }
+      }
+    }
+    & p {
+      font-family: var(--font-family-Manrope);
+      & a {
+        color: gray;
+        transition: 0.5s ease;
+        &:hover {
+          color: var(--background-color);
+        }
+      }
     }
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 988px) {
-  .choose-us {
-    & .p {
-      padding: 0 50px;
-    }
-    & .cardses {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 0 50px;
-      margin: 0;
-      margin-top: 50px;
-      & .main-card-1 {
-        flex-direction: column;
-      }
-      & .card2 {
-        margin: 0 0;
-      }
-    }
+/* _________________________________________recent-blog_______________________________________ */
+
+/* _________________________________Some QUotion_____________________ */
+
+.wrapper {
+  max-width: 50%;
+  margin: auto;
+}
+
+.wrapper > h3,
+.wrapper > h1 {
+  font-family: var(--font-family-Manrope);
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.wrapper > h3 {
+  color: var(--background-color);
+}
+
+.wrapper > h1 {
+  font-size: 3rem;
+  margin-bottom: 100px;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: #f1eeff;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover {
+  background-color: #f1eeff;
+}
+.pannel {
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: white;
+  overflow: hidden;
+  background-color: #f1eeff;
+  display: none;
+}
+.pannel {
+  & p
+  {
+    margin-bottom: 50px;
   }
-  .sticky {
-    flex-direction: column;
-    padding: 50px;
-    & .text {
-      position: static;
+  & ol {
+    margin-bottom: 50px;
+    font-family: var(--font-family-Concert-One-Static);
+    & li {
+      margin-bottom: 10px;
+      line-height: 30px;
+      list-style: decimal;
     }
-  }
-  .pricing {
-    padding: 20px;
-    & .price-cards {
-      grid-template-columns: repeat(2, 1fr);
+    & span {
+      font-weight: bold;
+      font-size: 20px;
+      color: rgb(66, 66, 66);
     }
   }
 }
-@media screen and (min-width: 989px) and (max-width: 1300px) {
-  .choose-us {
-    & .p {
-      padding: 0 50px;
-    }
-    & .cardses {
-      padding: 0 50px;
-      margin: 0;
-      margin: 50px;
-      margin-top: 50px;
-      & .main-card-1 {
-        flex-direction: column;
-      }
-      & .card2 {
-        margin: 0 0;
-      }
-    }
-  }
-  .sticky {
-    padding: 50px;
-    & .text {
-      padding: 20px;
-      padding-top: 100px;
-      & h1 {
-        font-size: 50px;
-      }
-    }
-  }
-  .pricing {
-    padding: 20px;
-    & .price-cards {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+.pannel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-family: var(--font-family-Concert-One-Static);
+}
+
+.faq {
+  margin: 10px 0;
+  background: #f1eeff;
+  border-radius: 50px;
+}
+.faq.active {
+  border: none;
+  border-radius: 50px;
 }

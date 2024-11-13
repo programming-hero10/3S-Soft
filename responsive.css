@@ -1,0 +1,543 @@
+/* mini Screen */
+
+@media screen and (max-width: 765px) {
+  nav {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    & .logo img {
+      width: 100px;
+    }
+    & ul {
+      gap: 20px;
+      font-size: 16px;
+    }
+    & .btn a {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  .hero {
+    height: 100vh;
+    margin-top: 50px;
+    & h1 {
+      font-size: 50px;
+      padding: 20px;
+      line-height: 60px;
+      & br {
+        display: none;
+      }
+      & video {
+        display: none;
+      }
+    }
+    & .hero-para {
+      font-size: 16px;
+      padding: 0 30px;
+    }
+    & .download {
+      flex-direction: column;
+      padding: 0 20px;
+      gap: 50px;
+    }
+    /* & .runing {
+        & img {
+          margin-top: 290px;
+          margin-right: 50px;
+        }
+      } */
+  }
+  .slider {
+    /* height: 150px; */
+    margin: auto;
+    /* margin-top: 50px; */
+
+    margin-top: 300px;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .bg {
+    display: none;
+  }
+  .video {
+    margin-top: 00%;
+  }
+  .video video {
+    margin-left: 40px;
+    width: 80%;
+  }
+  main {
+    .cards {
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 200%;
+    }
+    & .Who-we-are {
+      padding: 20px;
+      flex-direction: column;
+      margin-top: 50px;
+      gap: 20px;
+      & .text {
+        & h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        & h1 {
+          font-size: 45px;
+          margin-bottom: 10px;
+        }
+      }
+      & .img img {
+        width: 100%;
+      }
+    }
+    & .work {
+      & .cardses {
+        gap: 150px;
+        padding: 20px;
+        & .card-text {
+          flex-direction: column;
+          margin: 0;
+          padding: 20px;
+          gap: 50px;
+        }
+        .card {
+          flex-direction: column;
+          & h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .recent-blog {
+    padding: 100px 20px;
+    background: url(images/bolg.png.bv.webp) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    & a {
+      color: #fff;
+    }
+    & img {
+      border-radius: 50px;
+    }
+    & h3,
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: var(--font-family-Roboto);
+    }
+    & h3 {
+      color: gold;
+    }
+    & h1 {
+      margin-bottom: 100px;
+      font-family: var(--font-family-Manrope);
+      font-size: 30px;
+    }
+    .see-blog {
+      text-align: center;
+      margin-top: 50px;
+      & a.see {
+        background: var(--background-color);
+        color: #fff;
+        padding: 15px 35px;
+        font-family: var(--font-family-Poppins);
+        border-radius: 30px;
+        transition: 0.5s ease;
+        font-weight: 600;
+        font-size: 20px;
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
+    }
+    & .blog-cards {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 80px 20px;
+      & .img img {
+        width: 350px;
+      }
+    }
+  }
+}
+/* end */
+
+/* Midiam Screen */
+@media screen and (min-width: 766px) and (max-width: 988px) {
+  nav {
+    padding: 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero {
+    & h1 {
+      font-size: 55px;
+      padding: 50px;
+      line-height: 70px;
+      & br {
+        display: none;
+      }
+      & video {
+        display: none;
+      }
+    }
+    & .hero-para {
+      font-size: 16px;
+      padding: 0 30px;
+    }
+    & .download {
+      flex-direction: column;
+      padding: 0 20px;
+      gap: 50px;
+    }
+  }
+  & .bg {
+    display: none;
+  }
+  .video {
+    margin-top: 150px;
+  }
+  .video video {
+    margin-left: 45px;
+    width: 90%;
+  }
+  /* main */
+  main {
+    & .cards {
+      margin-top: 80%;
+      padding: 20px;
+    }
+    & .Who-we-are {
+      flex-direction: column;
+      padding: 50px;
+      gap: 20px;
+    }
+    & .work {
+      & .cardses {
+        gap: 150px;
+        padding: 50px;
+        & .card-text {
+          flex-direction: column;
+          margin: 0;
+          padding: 20px;
+          gap: 50px;
+        }
+        .card {
+          flex-direction: column;
+          /* & h2 {
+              font-size: 30px;
+            } */
+          & .img img {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .recent-blog {
+    padding: 100px 50px;
+    & img {
+      border-radius: 50px;
+      width: 350px;
+    }
+    
+    & .blog-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding: 80px 20px;
+      & .img img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+/* end */
+
+/* some large */
+@media screen and (min-width: 990px) and (max-width: 1300px) {
+  nav {
+    padding: 20px;
+    & ul {
+      font-size: 18px;
+      gap: 20px;
+    }
+    & .btn a {
+      padding: 10px 20px;
+    }
+  }
+  .hero {
+    & h1 {
+      font-size: 50px;
+      line-height: 60px;
+      & br {
+        display: none;
+      }
+      & video {
+        display: noen;
+      }
+    }
+    .download {
+      flex-direction: column;
+      gap: 50px;
+    }
+    .hero-para {
+      padding: 0 50px;
+    }
+    & .download {
+      padding: 0 20px;
+      gap: 50px;
+      & .img img {
+        width: 50%;
+      }
+    }
+    /* & .runing img {
+        width: 70%;
+        margin-top: -50px;
+        margin-right: 350px;
+      } */
+  }
+  & .slider {
+    /* height: 150px; */
+    margin: auto;
+    margin-top: 120px;
+  }
+  & .bg {
+    display: none;
+  }
+  & .video video {
+    margin-left: 140px;
+    margin-top: 190px;
+    width: 70%;
+    /* position: fixed; */
+  }
+  /* main */
+  main {
+    & .cards {
+      padding: 20px;
+      margin-top: 0;
+    }
+    & .work {
+      & h1,
+      h3,
+      .p {
+        text-align: center;
+      }
+      & .cardses {
+        gap: 150px;
+        padding: 0 50px;
+        & .card-text {
+          flex-direction: column;
+          margin: 0;
+          padding: 20px;
+          gap: 50px;
+        }
+        .card {
+          /* & h2 {
+              font-size: 30px;
+            } */
+          & .img img {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .video {
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+  .video video {
+    width: 90%;
+    margin-left: 50px;
+  }
+}
+/* end */
+@media screen and (min-width: 1020px) and (max-width: 1030px) {
+  main {
+    .cards {
+      margin-top: 60%;
+    }
+    .Who-we-are {
+      padding: 50px;
+      flex-direction: column;
+      margin: 50px;
+      gap: 20px;
+    }
+  }
+}
+@media screen and (min-width: 1031px) and (max-width: 1280px) {
+  .slider {
+    margin-top: 200px;
+    margin-bottom: 50%;
+  }
+  main {
+    .cards {
+      margin-top: 150%;
+    }
+    & .Who-we-are {
+      padding: 50px;
+      flex-direction: column;
+      margin: 50px;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      & .img img {
+        width: 50%;
+      }
+    }
+  }
+  .video {
+    margin-top: -22px;
+  }
+}
+
+/* resposive______________ */
+@media screen and (max-width: 767px) {
+  .choose-us {
+    margin: 0;
+    padding: 50px 0;
+    & .p {
+      padding: 0px;
+      font-size: 16px;
+    }
+    .cardses {
+      padding: 20px;
+      margin: 0;
+      margin-top: 50px;
+      & .main-card-1 {
+        flex-direction: column;
+      }
+      & .card1 {
+        padding: 30px 20px;
+        & h1 {
+          font-size: 30px;
+        }
+        & .img {
+          flex-direction: column;
+          & img {
+            width: 100%;
+          }
+        }
+      }
+      & .card2 {
+        padding: 30px 20px;
+        & h1 {
+          font-size: 30px;
+        }
+        margin: 0 0;
+      }
+    }
+  }
+  .sticky {
+    flex-direction: column;
+    padding: 20px;
+    background-size: cover;
+    & .text {
+      text-align: center;
+      position: static;
+      padding: 20px;
+      & h1 {
+        font-size: 45px;
+      }
+    }
+    & .flex {
+      .card {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
+  .pricing {
+    padding: 20px;
+    .small-heading {
+      font-size: 18px;
+    }
+    & .small-heading {
+      font-size: 20px;
+      text-align: center;
+    }
+    & .big-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    .price-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 988px) {
+  .choose-us {
+    & .p {
+      padding: 0 50px;
+    }
+    & .cardses {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 50px;
+      margin: 0;
+      margin-top: 50px;
+      & .main-card-1 {
+        flex-direction: column;
+      }
+      & .card2 {
+        margin: 0 0;
+      }
+    }
+  }
+  .sticky {
+    flex-direction: column;
+    padding: 50px;
+    & .text {
+      position: static;
+    }
+  }
+  .pricing {
+    padding: 20px;
+    & .price-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and (min-width: 989px) and (max-width: 1300px) {
+  .choose-us {
+    & .p {
+      padding: 0 50px;
+    }
+    & .cardses {
+      padding: 0 50px;
+      margin: 0;
+      margin: 50px;
+      margin-top: 50px;
+      & .main-card-1 {
+        flex-direction: column;
+      }
+      & .card2 {
+        margin: 0 0;
+      }
+    }
+  }
+  .sticky {
+    padding: 50px;
+    & .text {
+      padding: 20px;
+      padding-top: 100px;
+      & h1 {
+        font-size: 50px;
+      }
+    }
+  }
+  .pricing {
+    padding: 20px;
+    & .price-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

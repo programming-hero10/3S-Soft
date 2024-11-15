@@ -2,20 +2,47 @@
 
 @media screen and (max-width: 765px) {
   nav {
-    padding: 10px;
-    flex-direction: column;
-    gap: 15px;
-    & .logo h1 {
-      font-size: 25px;
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    & h1 {
+      font-size: 20px;
     }
-    & ul {
-      gap: 20px;
-      font-size: 16px;
+    & .btn{
+      & img{
+        margin-right: 20px;
+        display: block;
+      }
     }
     & .btn a {
-      padding: 10px 20px;
-      font-size: 16px;
+      display: none;
     }
+    & .btn i {
+      font-size: 20px;
+      margin: 0 6px;
+      display: block;
+    }
+  }
+  #manu {
+    display: none;
+  }
+  #closeIcon {
+    display: none;
+    font-size: 30px;
+  }
+  #manu{
+    background: #fff;
+    width: 100%;
+    
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: center;
+    height: 100vh;
+  }
+  #manu li {
+    display: block;
+    margin: 50px 0;
   }
   .hero {
     height: 100vh;
@@ -214,10 +241,49 @@
 
 /* Midiam Screen */
 @media screen and (min-width: 766px) and (max-width: 988px) {
+  
   nav {
-    padding: 20px;
-    flex-direction: column;
-    gap: 50px;
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    height: 100%;
+    & h1 {
+      font-size: 20px;
+    }
+    & .btn{
+      & img{
+        margin-right: 20px;
+        display: block;
+      }
+    }
+    & .btn a {
+      display: none;
+    }
+    & .btn i {
+      font-size: 20px;
+      margin: 0 6px;
+      display: block;
+    }
+  }
+  #manu {
+    display: none;
+  }
+  #closeIcon {
+    display: none;
+    font-size: 30px;
+  }
+  #manu{
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: center;
+    height: auto;
+  }
+  #manu li {
+    display: block;
+    margin: 15px 0;
   }
   .hero {
     & h1 {

@@ -119,6 +119,8 @@ nav {
     font-size: 90px;
     padding: 20px 150px;
     line-height: 120px;
+    overflow: hidden;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
     /* font-weight: bold; */
     font-family: "Roboto", sans-serif;
     & video {
@@ -127,7 +129,14 @@ nav {
       margin-left: 20px;
       margin-right: 20px;
     }
+    /* span {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+      animation-delay: s;
+    } */
   }
+
   & .hero-para {
     font-size: 20px;
     font-family: "Poppins", sans-serif;
@@ -585,3 +594,27 @@ main {
     transform: rotate(360deg);
   }
 }
+@keyframes typing {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+/* @keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+} */

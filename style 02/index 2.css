@@ -122,22 +122,13 @@ nav {
       font-family: var(--font-family-Manrope);
       margin-top: 20px;
     }
-    & .video {
-      & h1 {
-        display: flex;
-        align-items: start;
-        font-family: var(--font-family-Manrope);
-        gap: 0;
-        line-height: 20px;
-        flex-direction: column;
-      }
-      & video {
-        width: 20%;
-        border-radius: 50px;
-      }
+    & h1 {
+      font-size: 50px;
+      font-family: var(--font-family-Poppins);
     }
     & .list {
-      margin-top: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
       & li {
         display: flex;
         align-items: center;
@@ -204,7 +195,7 @@ textarea:focus {
 .button-click {
   text-align: start;
 }
-button {
+.button {
   text-align: end;
   background-color: red;
   border: transparent solid 2px;
@@ -214,7 +205,7 @@ button {
   transition: 0.3s ease-in;
   margin: 0;
 }
-button:hover {
+.button:hover {
   background-color: #ccc;
   border: 2px solid red;
   color: #000000;
@@ -233,39 +224,6 @@ button:hover {
   }
 }
 /* services */
-.services {
-  background: var(--bacground-color3);
-}
-
-.sliders {
-  height: 150px;
-  margin: auto;
-  position: relative;
-  width: 100%;
-  display: grid;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  color: #fff;
-  & .slider-img {
-    align-items: center;
-    & h1 {
-      font-family: var(--font-family-Poppins);
-      opacity: 50%;
-    }
-    display: flex;
-  }
-  & img {
-    width: 50%;
-    border-radius: 500%;
-  }
-}
-.slider-trik {
-  display: flex;
-  width: calc(250px * 16);
-  animation: scroll 40s infinite alternate-reverse;
-}
-
 /* map */
 
 .map {
@@ -275,31 +233,31 @@ button:hover {
   margin-top: 50px;
   gap: 150px;
   padding: 50px 200px;
-  & .img img{
+  & .img img {
     width: 100%;
   }
   & .text {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 50px;
     & .card {
       background: #fff;
       padding: 20px 50px;
       border-radius: 10px;
       box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);
-      & h1{
+      & h1 {
         font-size: 30px;
         font-weight: 500;
         font-family: var(--font-family-Poppins);
         margin-bottom: 20px;
       }
-      & p{
+      & p {
         margin-bottom: 10px;
         font-size: 16px;
         font-family: "Roboto", sans-serif;
         color: gray;
       }
-      & a{
+      & a {
         font-family: var(--font-family-Poppins);
       }
     }
@@ -307,6 +265,53 @@ button:hover {
 }
 
 /* map */
+/*                          FAQ                            */
+.footer {
+  display: flex;
+  align-items: start;
+  padding: 100px 150px;
+  & .text {
+    background: var(--background-color);
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+    max-width: 300px;
+    margin-top: 50px;
+    & img {
+      width: 20%;
+      margin-bottom: 20px;
+    }
+    & h2 {
+      font-size: 20px;
+      font-family: var(--font-family-Poppins);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    & .btn{
+      text-align: center;
+    }
+    & a {
+      font-size: 18px;
+      font-family: var(--font-family-Manrope);
+      background: #fff;
+      text-align: center;
+      border-radius: 36px;
+      padding: 10px 20px;
+      color: #000;
+      & i{
+        color: green;
+      }
+    }
+  }
+}
+.wrapper {
+  padding: 0;
+  & .faq {
+  }
+}
+.wrapper > h1{
+  margin-bottom: 20px;
+}
 /* animation */
 @keyframes scroll {
   0% {

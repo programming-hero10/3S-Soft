@@ -4,6 +4,9 @@
   .scroll-watcher {
     margin-top: 25px;
   }
+  .boxe {
+    transform: translateX(10px);
+  }
   nav {
     position: relative;
     width: 100%;
@@ -268,7 +271,7 @@
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    & .text{
+    & .text {
       margin-bottom: 50px;
     }
   }

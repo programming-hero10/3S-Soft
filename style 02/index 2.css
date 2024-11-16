@@ -25,6 +25,28 @@ html,
 body {
   scroll-behavior: smooth;
 }
+.scroll-watcher {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 11111111;
+  height: 0.5vh;
+  top: 0;
+  left: 0;
+  background-color: red;
+  width: 0%;
+  transition: width 0.5s ease-out;
+}
+.box {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 :root {
   --font-family-Manrope: "Manrope", sans-serif;
   --font-family-Poppins: "Poppins", sans-serif;
@@ -59,6 +81,7 @@ nav {
   width: 70%;
   margin: 0 auto;
   padding: 25px 0;
+  animation: typing2 1s steps(40, end), blink-caret 0.75s step-end infinite;
   & h1 {
     font-size: 30px;
     font-family: var(--font-family-Poppins);
@@ -104,13 +127,17 @@ nav {
 .contact-form {
   display: flex;
   align-items: center;
+  height: 100vh;
   padding: 50px 300px;
   background: url("../images/Contact-Hero-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   gap: 90px;
+  overflow: hidden;
+  
   & .text {
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
     & h4 {
       color: gray;
       font-size: 20px;
@@ -144,7 +171,7 @@ nav {
 }
 .container {
   font-family: "Poppins", sans-serif;
-
+  animation: typing2 2s steps(40, end), blink-caret 0.75s step-end infinite;
   max-width: 980px;
 }
 .apply-box {
@@ -287,7 +314,7 @@ textarea:focus {
       font-weight: 600;
       margin-bottom: 20px;
     }
-    & .btn{
+    & .btn {
       text-align: center;
     }
     & a {
@@ -298,7 +325,7 @@ textarea:focus {
       border-radius: 36px;
       padding: 10px 20px;
       color: #000;
-      & i{
+      & i {
         color: green;
       }
     }
@@ -309,7 +336,7 @@ textarea:focus {
   & .faq {
   }
 }
-.wrapper > h1{
+.wrapper > h1 {
   margin-bottom: 20px;
 }
 /* animation */
@@ -322,5 +349,33 @@ textarea:focus {
   }
   100% {
     transform: translateX(calc(-250px * 9));
+  }
+}
+@keyframes typing {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+@keyframes typing2 {
+  0% {
+    opacity: 0;
+    transform: translatex(150px);
+  }
+  50% {
+    opacity: 0;
+    transform: translatex(150px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translatex(0px);
   }
 }

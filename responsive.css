@@ -1,6 +1,9 @@
 /* mini Screen */
 
 @media screen and (max-width: 765px) {
+  .scroll-watcher {
+    margin-top: 25px;
+  }
   nav {
     position: relative;
     width: 100%;
@@ -239,6 +242,7 @@
   /* contact page responsiv */
   .contact-form {
     flex-direction: column;
+    height: auto;
     gap: 20px;
     padding: 50px 20px;
     & .text {
@@ -262,8 +266,11 @@
   }
   .footer {
     flex-direction: column;
-    gap: 20px;
     padding: 20px;
+    align-items: center;
+    & .text{
+      margin-bottom: 50px;
+    }
   }
   .wrapper > h1 {
     font-size: 35px;
@@ -273,6 +280,9 @@
 
 /* Midiam Screen */
 @media screen and (min-width: 766px) and (max-width: 988px) {
+  .scroll-watcher {
+    margin-top: 0;
+  }
   nav {
     position: relative;
     width: 100%;
@@ -658,7 +668,7 @@
       width: 100%;
     }
   }
-  .footer{
+  .footer {
     padding: 20px;
   }
 }

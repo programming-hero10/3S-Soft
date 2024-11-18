@@ -1,4 +1,14 @@
 // __________________________________________navigation____________________________________________________
+function changeBg() {
+  var navbar = document.getElementById("navigation");
+  var scrollValue = window.scrollY;
+  if (scrollValue > 50) {
+    navbar.classList.add("nav-change");
+  } else {
+    navbar.classList.remove("nav-change");
+  }
+}
+window.addEventListener("scroll", changeBg);
 
 let x = document.getElementById("manu");
 let mIcon = document.getElementById("manuIcon");

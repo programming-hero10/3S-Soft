@@ -24,6 +24,10 @@
 html,
 body {
   scroll-behavior: smooth;
+  background: url("../images/Contact-Hero-bg.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .scroll-watcher {
   position: sticky;
@@ -78,10 +82,16 @@ a {
 .nav-gation {
   position: sticky;
   top: 0;
-  background: #ffffff;
+  background: none;
   z-index: 10000000;
   display: flex;
   align-items: center;
+}
+.nav-change {
+  background: #fff;
+}
+#navigation {
+  transition: 1s ease;
 }
 nav {
   display: flex;
@@ -138,13 +148,9 @@ nav {
   align-items: center;
   height: 100vh;
   padding: 50px 300px;
-  background: url("../images/Contact-Hero-bg.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   gap: 90px;
   overflow: hidden;
-  
+
   & .text {
     animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
     & h4 {

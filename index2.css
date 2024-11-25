@@ -638,8 +638,10 @@ footer {
   gap: 100px;
   margin-bottom: 50px;
   .footer-des {
-    & img {
-      margin-bottom: 20px;
+    & h1{
+      font-size: 35px;
+      font-family: var(--font-family-Concert-One-Static);
+      margin-bottom: 5px;
     }
     & p {
       font-family: var(--font-family-Poppins);

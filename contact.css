@@ -226,6 +226,11 @@ input,
 select,
 textarea:focus {
   outline: none;
+  transition: 0.8s ease;
+  &:hover {
+    border-bottom: 1px solid blue;
+    color: blue;
+  }
 }
 
 #flex-end {
@@ -348,8 +353,6 @@ textarea:focus {
 }
 .wrapper {
   padding: 0;
-  & .faq {
-  }
 }
 .wrapper > h1 {
   margin-bottom: 20px;

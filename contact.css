@@ -104,6 +104,9 @@ nav {
   & h1 {
     font-size: 30px;
     font-family: var(--font-family-Poppins);
+    & a{
+      color: #000;
+    }
   }
   & .nav-links li {
     display: inline-block;

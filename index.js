@@ -1,3 +1,7 @@
+// cursor
+
+// cursor
+
 // __________________________________________navigation____________________________________________________
 function changeBg() {
   var navbar = document.getElementById("navigation");
@@ -9,6 +13,16 @@ function changeBg() {
   }
 }
 window.addEventListener("scroll", changeBg);
+function showImage() {
+  var showImage = document.getElementById("image-show");
+  var scrollValue = window.scrollY;
+  if (scrollValue > 400) {
+    showImage.classList.add("img-show");
+  } else {
+    showImage.classList.remove("img-show");
+  }
+}
+window.addEventListener("scroll", showImage);
 
 let x = document.getElementById("manu");
 let mIcon = document.getElementById("manuIcon");

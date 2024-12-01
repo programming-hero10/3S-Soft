@@ -4,6 +4,14 @@
   .scroll-watcher {
     margin-top: 25px;
   }
+  .top2 {
+    left: 0;
+    /* margin-right: 20p; */
+    top: 500px;
+  }
+  .top img{
+    width: 100%;
+  }
   .boxe {
     transform: translateX(10px);
   }

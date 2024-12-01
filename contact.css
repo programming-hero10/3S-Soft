@@ -78,6 +78,28 @@ li {
 a {
   text-decoration: none;
 }
+.top img {
+  width: 55%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.top2 {
+  opacity: 0;
+  position: absolute;
+  margin-left: 95%;
+  position: sticky;
+  top: 0;
+  top: 850px;
+  z-index: 10000000000000000000000000;
+}
+#image-show {
+  transition: 0.5s ease;
+}
+.img-show {
+  opacity: 1;
+}
 /* navigation */
 .nav-gation {
   position: sticky;
@@ -104,7 +126,7 @@ nav {
   & h1 {
     font-size: 30px;
     font-family: var(--font-family-Poppins);
-    & a{
+    & a {
       color: #000;
     }
   }

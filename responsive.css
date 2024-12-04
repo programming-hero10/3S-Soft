@@ -251,7 +251,7 @@
     }
   }
   /* contact page responsiv */
-  .contact-form {
+  .contact-forms {
     flex-direction: column;
     height: auto;
     gap: 20px;
@@ -458,7 +458,7 @@
     gap: 20px;
   }
   /* contact page responsiv */
-  .contact-form {
+  .contact-forms {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 20px 50px;
@@ -641,7 +641,7 @@
     gap: 20px;
   }
   /* contact page responsiv */
-  .contact-form {
+  .contact-forms {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 50px 50px;

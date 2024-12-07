@@ -9,7 +9,7 @@
     /* margin-right: 20p; */
     top: 500px;
   }
-  .top img{
+  .top img {
     width: 100%;
   }
   .boxe {
@@ -37,21 +37,27 @@
       display: block;
     }
   }
-  #manu {
-    display: none;
+  #manuIcon {
+    transition: 0.5s ease;
   }
   #closeIcon {
-    display: none;
+    transition: 0.5s ease;
+    text-align: end;
+    margin-right: 20px;
+    margin-top: 20px;
     font-size: 30px;
   }
   #manu {
+    top: 0;
     background: #fff;
     width: 100%;
     position: absolute;
-    top: 60px;
+    margin-top: -9500px;
+    transition: all 0.5s ease-in-out;
     right: 0;
     text-align: center;
     height: 100vh;
+    overflow: hidden;
   }
   #manu li {
     display: block;
@@ -294,6 +300,9 @@
   .scroll-watcher {
     margin-top: 0;
   }
+  .nav-gation {
+    top: 0;
+  }
   nav {
     position: relative;
     width: 100%;
@@ -317,24 +326,27 @@
       display: block;
     }
   }
-  #manu {
-    display: none;
-  }
-  #openIcon {
-    font-size: 30px;
+  #manuIcon {
+    transition: 0.5s ease;
   }
   #closeIcon {
-    display: none;
+    transition: 0.5s ease;
+    text-align: end;
+    margin-right: 20px;
+    margin-top: 20px;
     font-size: 30px;
   }
   #manu {
+    top: 0;
     background: #fff;
     width: 100%;
     position: absolute;
-    top: 60px;
+    margin-top: -9500px;
+    transition: all 0.5s ease-in-out;
     right: 0;
     text-align: center;
-    height: auto;
+    height: 100vh;
+    z-index: 111111111111;
   }
   #manu li {
     display: block;
@@ -505,6 +517,36 @@
 
 /* some large */
 @media screen and (min-width: 990px) and (max-width: 1300px) {
+  #manuIcon {
+    transition: 0.5s ease;
+    display: block;
+    margin-left: 10px;
+  }
+  #closeIcon {
+    transition: 0.5s ease;
+    text-align: end;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  #manu {
+    top: 0;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    margin-top: -9500px;
+    transition: all 0.5s ease-in-out;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    z-index: 111111111111;
+  }
+  .scroll-watcher {
+    margin-top: 0;
+  }
+  .nav-gation {
+    top: 0px;
+  }
   nav {
     padding: 20px;
     width: 100%;

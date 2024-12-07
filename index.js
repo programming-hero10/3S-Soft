@@ -29,18 +29,13 @@ let mIcon = document.getElementById("manuIcon");
 let cIcon = document.getElementById("closeIcon");
 
 function openMenu() {
-  x.style.display = "block";
-  mIcon.style.display = "none";
-  cIcon.style.display = "block";
-}
-function openMenu() {
-  x.style.display = "block";
-  mIcon.style.display = "none";
+  x.style.marginTop= "0";
+  mIcon.style.opacity = "0";
   cIcon.style.display = "block";
 }
 function closeMenu() {
-  x.style.display = "none";
-  mIcon.style.display = "block";
+  x.style.marginTop = "-9500px";
+  mIcon.style.opacity = "1";
   cIcon.style.display = "none";
 }
 

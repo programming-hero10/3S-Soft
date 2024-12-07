@@ -109,6 +109,9 @@ a {
 header {
   height: 100vh;
 }
+#closeIcon{
+  display: none;
+}
 .nav-gation {
   position: sticky;
   top: 0;

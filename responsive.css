@@ -158,6 +158,12 @@
       }
     }
   }
+
+  .btn {
+    & .h-img {
+      display: block;
+    }
+  }
   .recent-blog {
     padding: 100px 20px;
     background: url(images/bolg.png.bv.webp) no-repeat center;

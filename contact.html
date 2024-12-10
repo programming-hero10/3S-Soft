@@ -34,6 +34,11 @@
         </div>
         <div class="nav-links">
           <ul id="manu">
+            <i
+              class="fa-solid fa-close"
+              onclick="closeMenu()"
+              id="closeIcon"
+            ></i>
             <li><a target="_blank" href="">About</a></li>
             <li><a target="_blank" href="">Portfolio</a></li>
             <li><a target="_blank" href="">Blog</a></li>
@@ -44,16 +49,12 @@
         <div class="btn">
           <img src="images/parson.png" alt="" />
           <a href="">Hire Us</a>
-          <img
+
+          <i
             id="manuIcon"
             onclick="openMenu()"
-            src="images/menu bar.png"
-            alt=""
-          />
-          <i
-            class="fa-solid fa-circle-xmark"
-            onclick="closeMenu()"
-            id="closeIcon"
+            class="fa fa-bars"
+            aria-hidden="true"
           ></i>
         </div>
       </nav>

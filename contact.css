@@ -115,6 +115,9 @@ a {
 #navigation {
   transition: 1s ease;
 }
+#closeIcon{
+  display: none;
+}
 nav {
   display: flex;
   align-items: center;

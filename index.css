@@ -105,11 +105,30 @@ a {
   top: 850px;
   z-index: 10000000000000000000000000;
 }
+
+.btn {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
 /* Styling___________________ */
 header {
   height: 100vh;
 }
-#closeIcon{
+#closeIcon {
   display: none;
 }
 .nav-gation {
@@ -171,7 +190,7 @@ nav {
     margin: 0 6px;
     display: none;
   }
-  & .btn a {
+  & .btn .a {
     font-size: 18px;
     font-weight: 500;
     padding: 10px 25px;

@@ -115,7 +115,7 @@ a {
 #navigation {
   transition: 1s ease;
 }
-#closeIcon{
+#closeIcon {
   display: none;
 }
 nav {
@@ -198,6 +198,15 @@ nav {
     & .list {
       margin-top: 30px;
       margin-bottom: 30px;
+      & .li1 {
+        animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+      }
+      & .li2 {
+        animation: typing2 2s steps(40, end), blink-caret 0.75s step-end infinite;
+      }
+      & .li3 {
+        animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+      }
       & li {
         display: flex;
         align-items: center;

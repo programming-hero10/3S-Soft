@@ -174,7 +174,7 @@
   & .text {
     position: sticky;
     margin-top: 20px;
-    padding: 100px;
+    padding: 120px;
     top: 0;
     & h3 {
       font-size: 25px;
